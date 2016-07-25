@@ -33,8 +33,8 @@ if [[ $? != 0 ]]; then
 else
     echo -e "\ngit add -A :"
     git add -A
-    if [[ $? != 0 ]]; then
-	echo "git:everything has been added to index"
+    if [[ $? == 0 ]]; then
+	echo "git: everything has been added to index"
     fi
 fi
 
@@ -44,8 +44,8 @@ if [[ $? != 0 ]]; then
 else
     echo -e "\ngit commit :"
     git commit -m "add a new post"
-    if [[ $? != 0 ]]; then
-	echo "git:commit index to local repository"
+    if [[ $? == 0 ]]; then
+	echo "git: commit index to local repository"
     fi
 fi
 
@@ -53,7 +53,7 @@ if [[ $? != 0 ]]; then
     echo -e "\ngit commit failed !!"
     exit 1
 else
-    echo -e "\ngit push"
+    echo -e "\ngit push :"
     git push
 fi
 
@@ -61,5 +61,5 @@ if [[ $? != 0 ]]; then
     echo -e "\ngit push failed !!"
     exit 1
 else
-    echo -e "\neverything is done!\ngood luck~~\n:)"
+    echo -e "\neverything is done!\ngood luck~~"
 fi
