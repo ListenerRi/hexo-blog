@@ -13,7 +13,7 @@ tags:
 所以只能手动在linux下添加了,我没有在livecd中进行添加,而是进入硬盘中的archlinux后添加的.
 有人会疑惑,没有启动项是怎么进入系统的??
 详细的就不说了,本文主要说怎么添加uefi启动项,就只简单描述下如何在没有uefi启动项的情况下进入系统:
-**进入BIOS,启动UEFI的shell模式,在shell模式中找到archlinux的efi引导文件,直接回车就行了**
+**进入BIOS,启动uefi的shell模式,在shell模式中找到archlinux的efi引导文件,直接回车就行了**
 
 # efibootmgr命令
 在windows下通常使用easyuefi软件来管理uefi启动项,linux下我还不知道有什么图形化的软件来管理uefi启动项,
