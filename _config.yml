@@ -72,3 +72,8 @@ deploy:
   message: "Blog update"
   repo:
     github: git@github.com:ListenerRi/ListenerRi.github.io.git,master
+
+# Local Search
+search:
+  path: search.xml
+  field: post
