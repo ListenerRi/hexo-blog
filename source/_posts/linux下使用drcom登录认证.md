@@ -65,3 +65,22 @@ cd ~/drcom-generic
 python2 latest-wired.py
 ```
 
+我写了一个方便启动，关闭drcom的脚本，有兴趣的可以看看:
+[https://github.com/ListenerRi/shells/blob/master/drcom.sh](https://github.com/ListenerRi/shells/blob/master/drcom.sh)
+
+下载下来后赋予可执行权限:
+```
+chmod +x drcom.sh
+```
+就可以用这个脚本来启动和关闭了,具体命令是:
+```
+#当不使用参数直接执行drcom.sh时,等同于使用-l参数
+
+#登录
+drcom.sh -l
+#重启
+drcom.sh -r
+#退出
+drcom.sh -q
+```
+
