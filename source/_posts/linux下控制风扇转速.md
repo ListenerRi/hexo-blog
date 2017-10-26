@@ -37,4 +37,4 @@ chmod a+x fancontrol.sh
 ```
 # 最大转速
 fancontrol.sh 255
-``
+```
