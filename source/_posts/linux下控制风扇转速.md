@@ -25,7 +25,7 @@ tags:
 read -p "input speed(0-255) and ENTER: " SPEED
 [[ -z $SPEED ]] && SPEED=85
 echo $SPEED | sudo tee /sys/class/hwmon/hwmon2/pwm1
-``
+```
 注意如果上述提到的设备文件不同，需要修改脚本中的路径。
 将上述代码保存为一个shell文件，如`fancontrol.sh`，并为其增加可执行权限：
 ```
@@ -35,6 +35,6 @@ chmod a+x fancontrol.sh
 
 使用方法：
 ```
-# 最大转速
+//最大转速
 fancontrol.sh 255
 ```
