@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ListenerRi's Blog
+title: listenerri's blog
 subtitle: "学的越多越发现会的越少 : )"
 description: "学的越多越发现会的越少 : )"
-author: ListenerRi
-language: zh-Hans
+author: listenerri
+language: zh-CN
 timezone:
 
 # URL
@@ -71,10 +71,11 @@ deploy:
   type: git
   message: "Blog update"
   repo:
-    github: git@github.com:ListenerRi/ListenerRi.github.io.git,master
-    coding: git@git.coding.net:ListenerRi/ListenerRi.git,coding-pages
+    github: git@github.com:listenerri/listenerri.github.io.git,master
+    coding: git@git.coding.net:listenerri/listenerri.git,coding-pages
 
 # Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 search:
   path: search.xml
   field: post
