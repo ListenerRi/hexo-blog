@@ -8,6 +8,9 @@ tags:
 - qt
 ---
 
+> 更新：
+> 可以使用[rdnetto/YCM-Generator](https://github.com/rdnetto/YCM-Generator)插件来自动生成`.ycm_extra_conf.py`
+
 > 当前操作系统: osx 10.13<br/>
 > 使用brew安装的qt5
 
