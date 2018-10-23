@@ -23,6 +23,8 @@ if [[ $? != 0 ]]; then
     echo -e "\nhexo generate failed !!"
     exit 1
 else
+    echo -e "\ncreate google validate file..."
+    mv public/google369382ba1ecee5ef public/google369382ba1ecee5ef.html
     echo -e "\nhexo deploy :"
     hexo deploy
 fi
