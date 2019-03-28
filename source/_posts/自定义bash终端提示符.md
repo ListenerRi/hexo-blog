@@ -50,7 +50,21 @@ PS1='$(if [[ $? == 0 ]]; then echo "\[\e[1;32m\]:) "; else echo "\[\e[1;31m\]:( 
 
 ![third](third.png)
 
-使用方法，将下面的代码，复制粘贴到 ~/.bashrc 中：
+使用方法，首先在终端中执行以下命令：
+
+```
+type __git_ps1
+```
+
+如果没有任何输出，或者输出内容不是一个 shell 函数，那么需要下载这个脚本：[https://raw.githubusercontent.com/listenerri/dotfiles/master/git-prompt.sh](https://raw.githubusercontent.com/listenerri/dotfiles/master/git-prompt.sh)，例如将其放在 HOME 目录下：`~/git-prompt.sh`，然后在 ~/.bashrc 中添加以下内容执行此脚本：
+
+```
+source ~/git-prompt.sh
+```
+
+`__git_ps1` 是一个 git 新版提供的函数，旧版本的 git 没有，因此需要下载并加载上面这个脚本，这个脚本是我从系统中提取出来的，未做任何修改。
+
+接着将下面的代码，复制粘贴到 ~/.bashrc 中，并且要在上面那行之后，如果你不需要执行第二部下载那个脚本，则下面的内容放在哪里都行：
 
 ```
 export GIT_PS1_SHOWDIRTYSTATE=1
