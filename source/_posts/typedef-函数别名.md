@@ -22,7 +22,7 @@ myint b;
 而函数别名的语法有些不同：
 ```
 int max(int, int);
-typedef int (* max_func_t) (int, int);
+typedef int (* max_func_t)(int, int);
 
 max_func_t max_alias;
 
@@ -41,7 +41,7 @@ void test(int (* max_func)(int, int)) {
 }
 test(max);
 
-typedef int (* max_func_t) (int, int);
+typedef int (* max_func_t)(int, int);
 
 // 使用别名，接收一个函数指针并调用
 void test(max_func_t max_func) {
@@ -53,9 +53,9 @@ test(max);
 函数别名的语法一直让我很奇怪写着也很难受，今天又碰到要将函数作为参数传递的情况，于是谷歌了一下，其实可以这样理解：
 ```
 // 正确语法
-typedef int (*max_func_t) (int, int);
-//       ^        ^           ^
-//    返回类型   别名         参数
+typedef int (*max_func_t)(int, int);
+//       ^        ^          ^
+//    返回类型   别名        参数
 
 // 错误语法，但有助于理解（强行理解）
 typedef int (*) (int, int) max_func_t;
