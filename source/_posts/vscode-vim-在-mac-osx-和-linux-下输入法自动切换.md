@@ -12,9 +12,7 @@ tags:
 - im-select
 ---
 
-目前 vscode 的 vim 插件支持在不同输入模式下自动切换输入法，可是 vscode 的配置目前不支持判断操作系统，
-所以关于输入法切换的相关配置不能在 mac osx 和 linux 下通用，但是又不想因为这个问题维护两份 vscode 的
-配置文件，所以就想办法在 linux 使用 shell 脚本模仿了一个 im-select 的命令。
+目前 vscode 的 vim 插件支持在不同输入模式下自动切换输入法，可是 vscode 的配置目前不支持判断操作系统， 所以关于输入法切换的相关配置不能在 mac osx 和 linux 下通用，但是又不想因为这个问题维护两份 vscode 的配置文件，所以就想办法在 linux 使用 shell 脚本模仿了一个 im-select 的命令。
 
 关于 vscode vim 插件输入法相关的配置可以到下面的链接中查看：
 
