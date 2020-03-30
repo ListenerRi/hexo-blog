@@ -9,7 +9,7 @@ tags:
 
 由于时间比较急，所以在网上找了一篇速度文章学习，教程很棒，读完后对各种奇葩语法有了一定的认识，链接如下：
 
-(https://qntm.org/perl_cn)[https://qntm.org/perl_cn]
+https://qntm.org/perl_cn
 
 下面是一些小笔记：
 
