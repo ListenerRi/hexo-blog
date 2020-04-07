@@ -1,5 +1,5 @@
 ---
-title: minikube 安装小记
+title: minikube 启动失败
 date: 2020-04-07 13:29:49
 categories: k8s
 tags:
