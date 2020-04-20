@@ -8,6 +8,25 @@ type:
 > 在这里贴一些不成文章的短句，可能是偶现的灵感，可能是重要但不至于写得长篇大论的知识要点，也可能一些愿望和目标，还可能是吐槽或者抱怨，总之我也不确定会写点什么到这里 : )
 
 
+## 2020-04-20 10:00
+创建客户端容器：
+```
+docker create --name ss-local -p 1080:1080 -v /etc/ss.json:/etc/ss.json shadowsocks/shadowsocks-libev ss-local -c /etc/ss.json
+```
+当需要修改服务器时，修改主机 `/etc/ss.json` 的内容，也可创建多份配置文件，需要使用哪个配置文件时就创建其到主机 `/etc/ss.json` 的链接，之后执行：
+```
+docker restart ss-local
+```
+即为应用了修改，若不放心可以执行以下命令确认：
+```
+docker exec ss-local cat /etc/ss.json
+```
+服务端类似：
+```
+docker create --name ss-server -p 1234:1234 -v /etc/ss.json:/etc/ss.json shadowsocks/shadowsocks-libev ss-server -c /etc/ss.json
+```
+注意修改上述命令中的 `1234` 为配置文件 `/etc/ss.json` 中指定的服务器端口
+
 ## 2020-02-24 09:57
 python 中 list 查找性能低且不能被 hash 因此能用 set 就不用 list 能用 tuple 也不用 list
 
