@@ -72,7 +72,7 @@ deploy:
   message: "Blog update"
   repo:
     github: git@github.com:listenerri/listenerri.github.io.git,master
-    coding: git@git.coding.net:listenerri/listenerri.git,coding-pages
+    #coding: git@git.coding.net:listenerri/listenerri.git,coding-pages
 
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
