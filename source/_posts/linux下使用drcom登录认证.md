@@ -66,7 +66,7 @@ python2 latest-wired.py
 ```
 
 我写了一个方便启动，关闭drcom的脚本，有兴趣的可以看看:
-[https://github.com/ListenerRi/shells/blob/master/drcom.sh](https://github.com/ListenerRi/shells/blob/master/drcom.sh)
+[https://github.com/listenerri/scripts/blob/master/shell/drcom.sh](https://github.com/listenerri/scripts/blob/master/shell/drcom.sh)
 
 下载下来后赋予可执行权限:
 ```
